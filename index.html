@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive pricing component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="image-div">
+      <img class="background" src="./images/bg-pattern.svg" />
+      <img class="patern" src="./images/pattern-circles.svg" />
+    </div>
+    <main>
+      <p class="text-one">Simple, traffic-based pricing</p>
+      <p class="text-two">
+        Sign-up for our 30-day trial. <br class="next-line" />
+        No credit card required.
+      </p>
+    </main>
+    <div class="main-div">
+      <div class="container">
+        <div class="div-dec">
+          <p class="text">100K PAGEVIEWS</p>
+          <div class="div mobile">
+            <input type="range" min="0" max="100" step="25" id="range" />
+          </div>
+
+          <p class="price">
+            <span class="price-span">$16.00</span
+            ><span class="hide"> /month</span>
+          </p>
+        </div>
+        <div class="div dec">
+          <input type="range" min="0" max="100" step="25" id="range" />
+        </div>
+        <div class="click">
+          <p class="billing">Monthly Billing</p>
+          <div class="toggle">
+            <div class="toggle-button"></div>
+          </div>
+          <p class="billing">Yearly Billing</p>
+          <p class="discaunt">-25% <span class="disc"> discaunt</span></p>
+        </div>
+      </div>
+      <hr />
+      <div class="text-div">
+        <div>
+          <div class="icon-text">
+            <img class="icon" src="./images/icon-check.svg" />
+            <p class="text-three">Unlimited websites</p>
+          </div>
+          <div class="icon-text">
+            <img class="icon" src="./images/icon-check.svg" />
+            <p class="text-three">100% data ownership</p>
+          </div>
+          <div class="icon-text">
+            <img class="icon" src="./images/icon-check.svg" />
+            <p class="text-three">Email reports</p>
+          </div>
+        </div>
+        <button class="btn">Start my trial</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
